@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-    font-family: Roboto;
+  font-family: Roboto;
 }
 
 .header {
@@ -10,7 +10,7 @@ body {
   height: 1000px;
   background-size: contain;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -32,13 +32,12 @@ body {
   margin-top: 200px;
 }
 
-.center-text{
-    margin-left: 950px;
+.center-text {
+  margin-left: 950px;
   font-size: 70px;
   font-family: Roboto;
   font-weight: bold;
-    width: 25%;
-
+  width: 25%;
 }
 .products {
   font-size: 50px;
@@ -54,7 +53,7 @@ body {
   justify-content: center;
   width: 250px;
   height: 280px;
-  object-fit:contain;
+  object-fit: contain;
 }
 .background {
   width: 300px;
@@ -89,7 +88,7 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #ED1C24;
+  background-color: #ed1c24;
   display: flex;
   flex-direction: column;
 }
@@ -97,7 +96,7 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #00BFF3;
+  background-color: #00bff3;
   display: flex;
   flex-direction: column;
 }
@@ -105,7 +104,7 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #39B54A;
+  background-color: #39b54a;
   display: flex;
   flex-direction: column;
 }
@@ -113,7 +112,7 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   display: flex;
   flex-direction: column;
   border-color: antiquewhite;
@@ -124,56 +123,56 @@ body {
 }
 
 .product {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product:hover {
-    filter: drop-shadow(8px 8px 6px rgba(0,0,0,0.5));
+  filter: drop-shadow(8px 8px 6px rgba(0, 0, 0, 0.5));
 }
 
 .product:hover .name,
 .product:hover .price {
-    text-shadow: 10px 10px 2px rgba(0,0,0,0.35);
+  text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.35);
 }
 
 .product:hover .colors div {
-    box-shadow: 10px 10px 6px rgba(0,0,0,0.35);
+  box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 768px) {
   .header {
-  width: auto;
-  height: 1000px;
-}
+    width: auto;
+    height: 1000px;
+  }
 
-.nav {
-  margin-right: 2%;
-  gap: 15px;
-  padding: 30px;
-  font-size: 13px;
+  .nav {
+    margin-right: 2%;
+    gap: 15px;
+    padding: 30px;
+    font-size: 13px;
+  }
+  .center-text {
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+  .ts,
+  .tm,
+  .tj {
+    margin-left: 40%;
+    font-size: 23px;
+  }
 }
-.center-text {
-  margin-left: 30%;
-  margin-top:5%;
-}
-.ts,
-.tm,
-.tj {
-  margin-left: 40%;
-  font-size: 23px;
-}
- } 
-.gallery{
-  background-color: #EBEBEB;
+.gallery {
+  background-color: #ebebeb;
   padding: 20px;
   position: relative;
   width: 100%;
 }
-.img-container{
+.img-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   width: 80%;
   position: relative;
@@ -181,12 +180,12 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-.gallery h2{
+.gallery h2 {
   font-size: 40px;
   margin-bottom: 80px;
   text-align: center;
 }
-.image img{
+.image img {
   position: absolute;
   width: 900px;
   height: 394px;
@@ -194,32 +193,32 @@ body {
   top: 0;
   left: -5%;
 }
-.first img{
+.first img {
   z-index: 1;
   height: 294px;
-  transform: translateX(-15%); 
+  transform: translateX(-15%);
   top: 14%;
 }
-.second img{
-z-index: 2;
-  transform: translateX(-10%); 
-    top: 5%;
+.second img {
+  z-index: 2;
+  transform: translateX(-10%);
+  top: 5%;
   height: 354px;
 }
-.third img{
-z-index: 3;
+.third img {
+  z-index: 3;
 }
-.fourth img{
-z-index: 2;
-  transform: translateX(10%); 
-    top: 5%;
+.fourth img {
+  z-index: 2;
+  transform: translateX(10%);
+  top: 5%;
   height: 354px;
 }
-.five img{
-z-index: 1;
-  transform: translateX(15%); 
+.five img {
+  z-index: 1;
+  transform: translateX(15%);
   height: 294px;
-    top: 14%;
+  top: 14%;
 }
 
 .slider-controls {
@@ -260,6 +259,10 @@ z-index: 1;
   transform: scale(1.2);
 }
 
-
-
-
+.catalog p {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}

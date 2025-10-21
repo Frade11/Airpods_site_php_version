@@ -59,56 +59,7 @@ $result = $conn->query($sql);
             echo "<p>No products found.</p>";
         }
     ?>
-        <!-- <div class="product">
-            <div class="background">
-                <img src="img/ear1.png">
-            </div>
-            <div class="first">
-            <span class="name">Beats Solo </span>
-            <div class="colors">
-                <div class="red"></div>
-                <div class="blue"></div>
-                <div class="green"></div>
-                <div class="white"></div>
-            </div>
-            </div>
-            <span class="price">$255.00 </span>
-        </div>
-
-        <div class="product">
-            <div class="background">
-                <img src="img/ear2.png">
-            </div>
-            <div class="first">
-            <span class="name">Beats Solo </span>
-            <div class="colors">
-                <div class="red"></div>
-                <div class="blue"></div>
-                <div class="green"></div>
-                <div class="white"></div>
-            </div>
-            </div>
-            <span class="price">$255.00 </span>
-        </div>
-
-        <div class="product">
-            <div class="background">
-                <img src="img/ear3.png">
-            </div>
-            <div class="first">
-            <span class="name">Beats Solo </span>
-            <div class="colors">
-                <div class="red"></div>
-                <div class="blue"></div>
-                <div class="green"></div>
-                <div class="white"></div>
-            </div>
-            </div>
-
-            <span class="price">$255.00 </span>
-        </div> -->
     </div>
-
     <div class="gallery">
         <h2>GALLERY</h2>
         <div class="img-container">
