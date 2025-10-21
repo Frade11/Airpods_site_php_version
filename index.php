@@ -1,3 +1,10 @@
+<?php
+include("connection.php");
+
+$sql = "SELECT * FROM products";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
