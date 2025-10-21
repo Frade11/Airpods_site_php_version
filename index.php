@@ -34,6 +34,31 @@ $result = $conn->query($sql);
             <span>NEW PRODUCTS</span>
         </div>
     <div class="catalog">
+    <?php
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "
+                <div class='product'>
+                    <div class='background'>
+                        <img src='{$row['image']}' alt='{$row['name']}'>
+                    </div>
+                    <div class='first'>
+                        <span class='name'>{$row['name']}</span>
+                        <div class='colors'>
+                            <div class='red'></div>
+                            <div class='blue'></div>
+                            <div class='green'></div>
+                            <div class='white'></div>
+                        </div>
+                    </div>
+                    <span class='price'>\${$row['price']}</span>
+                </div>
+                ";
+            }
+        } else {
+            echo "<p>No products found.</p>";
+        }
+    ?>
         <!-- <div class="product">
             <div class="background">
                 <img src="img/ear1.png">

@@ -6,7 +6,7 @@ $dbname = "shop";
 
 $conn = new mysqli($servername,$username,$password,$dbname);
 
-if($con->connect_error){
+if($conn->connect_error){
     die("Conextion failed: " . $conn->connect_error);
 }
 ?>
