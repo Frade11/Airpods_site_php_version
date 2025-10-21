@@ -34,7 +34,7 @@ $result = $conn->query($sql);
             <span>NEW PRODUCTS</span>
         </div>
     <div class="catalog">
-        <div class="product">
+        <!-- <div class="product">
             <div class="background">
                 <img src="img/ear1.png">
             </div>
@@ -81,7 +81,7 @@ $result = $conn->query($sql);
             </div>
 
             <span class="price">$255.00 </span>
-        </div>
+        </div> -->
     </div>
 
     <div class="gallery">
