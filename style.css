@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+    font-family: Roboto;
+}
+
+.header {
+  background-image: url("img/headphones.png");
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: contain;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+  gap: 60px;
+  padding: 40px;
+  font-size: 25px;
+  font-family: Roboto;
+}
+.center-text {
+  margin-top: 200px;
+}
+/* .ts,
+.tm,
+.tj {
+  margin-left: 950px;
+  font-size: 70px;
+  font-family: Roboto;
+  font-weight: bold;
+} */
+.center-text{
+    margin-left: 950px;
+  font-size: 70px;
+  font-family: Roboto;
+  font-weight: bold;
+    width: 25%;
+
+}
+.products {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 105px;
+  font-family: Roboto;
+}
+.product {
+  padding: 70px;
+}
+.background img {
+  justify-content: center;
+  width: 250px;
+  height: 280px;
+  object-fit:contain;
+}
+.background {
+  width: 300px;
+  height: 270px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.colors {
+  display: flex;
+  flex-direction: row;
+  margin-left: 35%;
+  margin-right: 0px;
+  gap: 5px;
+}
+.name {
+  font-size: 25px;
+  font-family: Roboto;
+  margin-left: 0px;
+}
+.red {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ED1C24;
+  display: flex;
+  flex-direction: column;
+}
+.blue {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #00BFF3;
+  display: flex;
+  flex-direction: column;
+}
+.green {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #39B54A;
+  display: flex;
+  flex-direction: column;
+}
+.white {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  border-color: antiquewhite;
+}
+.price {
+  font-size: 18px;
+  font-family: Roboto;
+}
+
+
+.product {
+    transition: 0.3s;
+}
+
+.product:hover {
+    filter: drop-shadow(8px 8px 6px rgba(0,0,0,0.5));
+}
+
+.product:hover .name,
+.product:hover .price {
+    text-shadow: 10px 10px 2px rgba(0,0,0,0.35);
+}
+
+.product:hover .colors div {
+    box-shadow: 10px 10px 6px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 768px) {
+  .header {
+  width: auto;
+  height: 1000px;
+}
+
+.nav {
+  margin-right: 2%;
+  gap: 15px;
+  padding: 30px;
+  font-size: 13px;
+}
+.center-text {
+  margin-left: 30%;
+  margin-top:5%;
+}
+.ts,
+.tm,
+.tj {
+  margin-left: 40%;
+  font-size: 23px;
+}
+ } 
+.gallery{
+  background-color: #EBEBEB;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+.img-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items:center;
+  justify-content: center;
+  width: 80%;
+  position: relative;
+  height: 400px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.gallery h2{
+  font-size: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.image img{
+  position: absolute;
+  width: 900px;
+  height: 394px;
+  border-radius: 30px;
+  top: 0;
+  left: -5%;
+}
+.first img{
+  z-index: 1;
+  height: 294px;
+  transform: translateX(-15%); 
+  top: 14%;
+}
+.second img{
+z-index: 2;
+  transform: translateX(-10%); 
+    top: 5%;
+  height: 354px;
+}
+.third img{
+z-index: 3;
+}
+.fourth img{
+z-index: 2;
+  transform: translateX(10%); 
+    top: 5%;
+  height: 354px;
+}
+.five img{
+z-index: 1;
+  transform: translateX(15%); 
+  height: 294px;
+    top: 14%;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  color: #333;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background-color: gray;
+  transform: scale(1.2);
+}
+
+
+
+
